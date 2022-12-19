@@ -1,0 +1,55 @@
+<!--
+File: index.html
+HW 5 GUI Assignment: Scrabble
+Steven Ceballos, UMass Lowell Computer Science, steven_ceballos@student.uml.edu
+December 7, 2022 at 1:43 PM    
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GUI1 HW5: Scrabble</title>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="js/jquery-ui.js" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="content">
+            <p id="score">Score = 0</p>
+            <p id="tilesRemaining">Remaining Tiles = </p>
+
+            <br><br><br>
+
+            <p id="errorMessage"></p>
+
+            <div id="boardRow">
+                <img class="droppable" id="1" src="other/images/Scrabble_BlankSquare.jpg" alt="boardSquare">
+                <img class="droppable" id="2" src="other/images/bonusSquare.jpg" alt="boardSquare">
+                <img class="droppable" id="3" src="other/images/Scrabble_BlankSquare.jpg" alt="boardSquare">
+                <img class="droppable" id="4" src="other/images/Scrabble_BlankSquare.jpg" alt="boardSquare">
+                <img class="droppable" id="5" src="other/images/bonusSquare.jpg" alt="boardSquare">
+                <img class="droppable" id="6" src="other/images/Scrabble_BlankSquare.jpg" alt="boardSquare">
+                <img class="droppable" id="7" src="other/images/Scrabble_BlankSquare.jpg" alt="boardSquare">
+            </div>
+
+            <br><br><br>
+
+            <button id="submit" type="submit" onclick="submitWord()">Submit</button>
+            <button id="reset" type="submit" onclick="resetGame()">Restart</button>
+
+            <br><br><br>
+
+            <div id="tileRack" class="droppable"></div>
+
+            <br><br><br>
+
+            <div class="droppable" id="exchange">
+                <p id="exchangeText">Drop a tile here to exchange it</p>
+            </div>
+        </div>
+
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/scrabble.js"></script>
+    </body>
+</html>
