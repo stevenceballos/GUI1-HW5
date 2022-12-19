@@ -1,0 +1,82 @@
+/*
+File: style.css
+HW 5 GUI Assignment: scrabble
+Steven Ceballos, UMass Lowell Computer Science, steven_ceballos@student.uml.edu
+December 7, 2022 at 1:46 PM    
+*/
+body {
+    background-image: url("background.jpg");
+}
+
+p {
+    font-weight: bold;
+    border-color: #c99054;
+}
+
+#content {
+    width: 700px;
+    margin: auto;
+}
+
+#score {
+    float: left;
+    font-size: 120%;
+}
+
+#tilesRemaining {
+    float: left;
+    padding-left: 370px;
+    font-size: 120%;
+}
+
+.draggable {
+    width: 65px;
+    height: 80px;
+    padding: 5px;
+}
+
+#tileRack {
+    background-image: url("tilerack.png");
+    width: 525px;
+    background-color: #c99054;
+    margin-left: 45px;
+}
+
+#errorMessage {
+    color: red;
+}
+
+#submit {
+    margin-left: 45px;
+}
+
+#reset {
+    margin-left: 330px;
+}
+
+#exchangeTile {
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+    background-color: #d53434;
+    margin-left: 155px;
+}
+
+#exchangeText {
+    color: black;
+    font-size: 200%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.drop-hover {
+    box-shadow: 0px 0px 20px green;
+}
+
+.drop-hover-rack {
+    box-shadow: 0px 0px 20px blue;
+}
+
+.drop-hover-exchange {
+    box-shadow: 0px 0px 20px rgb(28, 1, 1);
+}
